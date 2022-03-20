@@ -1,0 +1,67 @@
+.form {
+    position: relative;
+    height: 100vh;
+}
+
+.board {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 40vw;
+    height: 70vh;
+
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+
+    top: 50vh;
+    transform: translate(0, -50%);
+
+    overflow-y: auto;
+}
+
+.board::-webkit-scrollbar {
+    width: 7px;
+    background-color: #f9f9fd;
+}
+
+.board::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #18aaaa;
+}
+
+.board::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #f9f9fd;
+}
+
+.message {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: 12px 8px;
+    border-radius: 10px;
+    background-color: #eff5f9;
+}
+
+.message:nth-child(n+1) {
+    margin-top: 5px;
+}
+
+span {
+    display: block;
+    align-self: center;
+}
+
+.title {
+    margin-left: 15px;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+
